@@ -1,0 +1,502 @@
+/* Utviklet i anledning jobbmesse hos DnB - på kort varsel */
+
+body { background-image: linear-gradient(to right, #B88746, #ad8551 40%);   height: 100%;
+  width: 100%; margin: 0;   overflow-x: hidden; }
+html, body { height: 100%;
+  width:100%;
+padding:0;
+margin:0;}
+
+/* header */
+  #header {
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 50px 270px; 
+    background-color: #191919;
+  }
+
+  /* logo */
+  .img{
+    position: absolute;
+    left: 20px;   
+  }
+
+#header-img
+{
+width:100px;
+height:100px;
+}
+
+#signatur-img
+{
+width:150px;
+height:100px;
+}
+
+/* hvit signatur på hover*/ 
+.signature-link:hover img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+
+/*navigasjon*/
+  .nav-links {
+    display:flex; 
+    gap: 30px;    
+  }
+
+  .nav-links a {
+    color: #B88746;
+    font-size: 25px;
+    text-decoration: none;
+      font-family: 'Sofia Sans Condensed', sans-serif;
+      justify-content: center;
+      align-items: center; 
+  }
+  
+  .nav-links a:hover {
+    color: white;
+  }
+
+  /*MAIN*/
+  .main {
+    height:80.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+/*Main content / landing ...*/
+.btn {
+  background-color: #ffffff;
+  border: none;
+  color: #B88746;
+  padding: 12px 30px;
+  margin-top:30px;
+  cursor: pointer;
+  font-size: 20px;
+  min-width:100%;
+  text-decoration-color:#B88746;
+}
+.btn:hover {
+  background-color: #191919;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height:70vh;
+}
+
+
+
+
+
+p4 {
+  flex-direction:column;
+  text-align:center;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:25px;
+}
+
+h4 {
+  flex-direction:column;
+  text-align:center;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:25px;
+
+}
+
+h1 {
+  flex-direction:column;
+  text-align:center;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:25px;
+
+}
+
+p1 {
+  flex-direction:column;
+  text-align:center;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:25px;
+
+}
+
+
+
+
+/* om meg */
+#wrapper-bio {
+  height: 80.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #B88746;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #191919;
+  width: 80%;
+  max-width: 800px;
+  max-height:80.5vh;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bio img {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+h7 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p7 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.text-area {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+/* kontakt-form */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: none;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  resize: vertical;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:15px;
+}
+
+input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: none;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  resize: vertical;
+  font-family:'Sofia Sans Condensed', sans-serif;
+}
+
+
+input[type=submit] {
+  background-color: #ffffff; 
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  font-size:20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  width:100%;
+
+}
+
+input[type=submit]:hover {
+  background-color: #B88746; 
+  font-family:'Sofia Sans Condensed', sans-serif;
+}
+
+
+#wrapper {
+  height:80.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#B88746; 
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:20px;
+
+}
+
+
+.kontakt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+  max-width:50%;
+  padding:20px;
+  min-width:30%;
+
+  border-radius:10px;
+}
+
+
+
+/* Skrivemaskin-effekt på intro */ 
+
+.typewriter h1 {
+  color: #fff;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:40px;
+  overflow: hidden; 
+  border-right: .01em solid rgb(255, 255, 255); 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.8s steps(30, end) ,
+    blink-caret .5s step-end infinite;
+    font-family:'Sofia Sans Condensed', sans-serif;
+    
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255) }
+}
+
+
+
+  /*footer*/
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #191919;
+    z-index:5;
+    min-height:6%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* sosiale medier i footer */
+  .somedia {
+display:flex;
+flex-direction:row;
+align-items: center;
+justify-content: center;
+gap:50px;
+  }
+ 
+  .footer a {
+    color: #B88746;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration:None;
+    align-items: center;
+  }
+  
+  .footer a:hover {
+    color: white;
+  }
+
+
+
+
+  /* media queries og keyframes (her må koden knekkes...) */ 
+
+  @media only screen and (max-width: 600px) {
+    p {
+      font-size: 11.5px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    p7 {
+      font-size:15px;
+      line-height:1.5;
+    }
+    
+    h6 {
+      font-size: 24px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    p4 {
+      font-size:15px; 
+      text-align:center;
+     }
+
+     h4 {
+      font-size:18px;
+     }
+
+     #wrapper-bio {
+      margin-top:-2px;
+    }
+    
+    .bio {
+      flex-direction: column;
+      width: 90%;
+      padding:0px;
+    }
+    
+    .bio img {
+      height:280px;
+      width:280px;
+      border-radius:50%;
+    
+  }
+
+}
+  
+  @media only screen and (max-width: 400px) {
+    p {
+      font-size: 12px;
+      max-width: 90%;
+      margin: 0 auto;
+
+    }
+    
+    h6 {
+      font-size: 20px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .nav-links {
+      flex-direction: row;
+      text-align: center;
+      gap:15px;
+      font-size:13px;
+    }
+
+  }
+
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 20px;
+  }
+
+  #header-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #signatur-img {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    text-align: center;
+    gap:10px;
+    font-size:9px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    flex-direction: row;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-container {
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-container {
+  }
+
+  .about-me {
+    flex-direction:row;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .nav-links {
+    flex-direction: row;
+    text-align: center;
+    gap:10px;
+  }
+  .nav-links a {
+    margin: 10px 0;
+    flex-direction: row;
+    text-align: center;
+    font-size:18px;
+  }
+  .text-container {
+    flex: 1 1 calc(100% - 150px);
+   line-height:1.5em;  
+   align-items: flex-start;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family:'Sofia Sans Condensed', sans-serif;
+  font-size:19px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: 
+    typing 2.8s steps(30, end) ,
+    blink-caret .5s step-end 10;
+    font-family:'Sofia Sans Condensed', sans-serif;
+    
+}
+
+
+.p4 {
+ font-size:13px; 
+}
+
+}
+
+@media (max-width: 768px) {
+  #wrapper-bio {
+    height: 80.5vh;
+    padding: 10px 0;
+  }
+  
+  .bio {
+    flex-direction: column;
+    width: 90%;
+    height: 80.5vh;
+ 
+  }
+  
+  .bio img {
+    margin: 0 auto;
+    height:280px;
+    width:280px;
+    flex-direction: flex-start;
+    border-radius:50%;
+  
+
+  }
+  
+  .text-area {
+    width: 100%;
+  }
+
+}
